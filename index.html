@@ -339,6 +339,7 @@
   }
 
   .lang-dot.abap { background: #e8274b; }
+  .lang-dot.mix { background: #4fd1c5; }
 
   .project-link {
     font-size: 0.75rem;
@@ -547,7 +548,6 @@
 </head>
 <body>
 
-<!-- Floating Words Background -->
 <div id="floating-words"></div>
 
 <nav>
@@ -561,7 +561,6 @@
 
 <main>
 
-  <!-- HERO -->
   <section id="hero">
     <div class="fade-up">
       <div class="status-pill">
@@ -598,7 +597,6 @@
     </div>
   </section>
 
-  <!-- PROYECTOS -->
   <section id="proyectos">
     <div class="section-header">
       <span class="section-num">01.</span>
@@ -622,6 +620,25 @@
         </div>
         <div class="project-footer">
           <span class="project-lang"><span class="lang-dot abap"></span>ABAP</span>
+          <span class="project-link">github →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/Mariaromeroruiz/sap-btp-greencore-n8n" target="_blank" class="project-card">
+        <div class="project-icon">🌿</div>
+        <div class="project-title">SAP BTP Green Core: Automatización e Integración Sostenible con n8n</div>
+        <div class="project-desc">
+          Flujo automatizado end-to-end (caso Inditex) para la homologación ambiental de proveedores (ESG). Expone un HTTP Service en ABAP Cloud consumido por un pipeline inteligente en n8n.
+        </div>
+        <div class="tags">
+          <span class="tag">SAP BTP</span>
+          <span class="tag">ABAP Cloud</span>
+          <span class="tag">n8n</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Clean Core</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-lang"><span class="lang-dot mix"></span>Hybrid</span>
           <span class="project-link">github →</span>
         </div>
       </a>
@@ -712,7 +729,6 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="section-header">
       <span class="section-num">02.</span>
@@ -755,11 +771,11 @@
       <div class="skill-group">
         <div class="skill-group-title">Back-end / Datos</div>
         <div class="skill-list">
+          <span class="skill-item">n8n (Automation)</span>
           <span class="skill-item">Flask</span>
           <span class="skill-item">Supabase</span>
           <span class="skill-item">REST APIs</span>
           <span class="skill-item">Power BI</span>
-          <span class="skill-item">Looker Studio</span>
         </div>
       </div>
       <div class="skill-group">
@@ -780,7 +796,6 @@
       </div>
     </div>
 
-    <!-- Cert -->
     <div style="margin-top: 2rem;">
       <div class="cert-card">
         <div class="cert-icon">🏅</div>
@@ -792,7 +807,6 @@
     </div>
   </section>
 
-  <!-- CONTACTO -->
   <section id="contacto">
     <div class="section-header">
       <span class="section-num">03.</span>
@@ -847,11 +861,12 @@
     'Clean Core', 'OData V4', 'Fiori', 'HANA Cloud', 'Eclipse ADT',
     'REST API', 'ABAP OOP', 'Build Apps', 'Connectivity', 'Git',
     'Python', 'SQL', 'S4HANA', 'ABAP Cloud', 'SAP BTP', 'Scrum',
-    'IAM', 'DOX', 'Flask', 'Power BI', 'Supabase', 'JavaScript'
+    'IAM', 'DOX', 'Flask', 'Power BI', 'Supabase', 'JavaScript',
+    'n8n', 'API REST'
   ];
 
   const container = document.getElementById('floating-words');
-  const count = 28;
+  const count = 30;
 
   for (let i = 0; i < count; i++) {
     const el = document.createElement('span');
